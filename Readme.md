@@ -24,12 +24,13 @@ streamlit-labs-for-routing/
 
 ```
 
-| Tool Name                     | Description                                      | Status        |
-|-------------------------------|--------------------------------------------------|---------------|
-| [Traffic Flow 🔗](traffic-flow/)         | Visualize TomTom traffic flow data on maps      | ✅ Available  |
-| EVRP Map Visualize         | Visualize EVRP routes on interactive maps       | 🚧 Coming Soon |
-| Route Solution Checker      | Check the feasibility of routing solutions      | 🚧 Coming Soon |
-| SUMO Live Delivery Viewer    | Live demo of SUMO for delivery routing          | 🚧 Coming Soon |
+| Tool Name                               | Description                                      | Status        | Live Demo |
+|------------------------------------------|--------------------------------------------------|---------------|-----------|
+| [Traffic Flow 🔗](traffic-flow/)         | Visualize TomTom traffic flow data on maps      | ✅ Available  | [https://routing-app-labs-traffic-flow.streamlit.app/](https://routing-app-labs-traffic-flow.streamlit.app/) |
+| EVRP Map Visualizer                      | Visualize EVRP routes on interactive maps       | 🚧 Coming Soon | — |
+| Route Solution Checker                   | Check the feasibility of routing solutions      | 🚧 Coming Soon | — |
+| SUMO Live Delivery Viewer                | Live demo of SUMO for delivery routing          | 🚧 Coming Soon | — |
+
 
 
 
