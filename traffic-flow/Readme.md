@@ -8,4 +8,4 @@ Simply enter your TomTom API key (get one free at developer.tomtom.com) to acces
 Screenhots:
 
 
-![Traffic Flow Explorer Screenshot 1](/routing-streamlit-labs/traffic-flow/images/Screenshot_1.png)
+![Traffic Flow Explorer Screenshot 1](images/Screenshot_1.png)
