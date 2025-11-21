@@ -1,6 +1,10 @@
 import folium
 from streamlit_folium import st_folium
 import streamlit as st
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # --- Streamlit page config ---
 st.set_page_config(
@@ -96,14 +100,20 @@ with st.sidebar:
     st.markdown("---")
     st.header("🔑 TomTom API Settings")
     
-    # API Key input
+    # Try to prefill from environment variable TOMTOM_API_KEY, allow user override
+    env_key = os.getenv("TOMTOM_API_KEY", "").strip()
     tomtom_key = st.text_input(
         "API Key",
+        value=env_key,
         help="Get a free API key at: https://developer.tomtom.com",
         type="password",
         placeholder="Enter your API key here"
     )
     
+    # If user left input empty, use env value
+    if not tomtom_key:
+        tomtom_key = env_key
+
     # Show API key status
     if tomtom_key.strip():
         st.success("✅ API Key detected")
