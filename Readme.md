@@ -16,6 +16,7 @@ Each tool lives in its own folder and is fully self-contained.
 ```
 streamlit-labs-for-routing/
 ├── traffic-flow-explorer/      # TomTom Traffic Flow + Folium map interface
+├── charging-station-map/       # Real Charging station map visualizer with OCM API
 ├── evrp-map-visualizer/        # (very soon) EVRP route visualizer
 ├── route-solution-checker/     # (very soon) Feasibility checker for routing solutions
 ├── sumo-live-delivery-viewer/  # (very soon) Live SUMO routing demo (future)
@@ -27,6 +28,7 @@ streamlit-labs-for-routing/
 | Tool Name                               | Description                                      | Status        | Live Demo |
 |------------------------------------------|--------------------------------------------------|---------------|-----------|
 | [Traffic Flow 🔗](traffic-flow/)         | Visualize TomTom traffic flow data on maps      | ✅ Available  | [https://routing-app-labs-traffic-flow.streamlit.app/](https://routing-app-labs-traffic-flow.streamlit.app/) |
+| [Charging Station Map 🔗](charging-station-map/) | Visualize real charging station data on maps | Done | |
 | EVRP Map Visualizer                      | Visualize EVRP routes on interactive maps       | 🚧 Coming Soon | — |
 | Route Solution Checker                   | Check the feasibility of routing solutions      | 🚧 Coming Soon | — |
 | SUMO Live Delivery Viewer                | Live demo of SUMO for delivery routing          | 🚧 Coming Soon | — |
