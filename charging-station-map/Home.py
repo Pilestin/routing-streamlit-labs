@@ -13,6 +13,14 @@ st.set_page_config(page_title="Charging Stations", layout="wide")
 
 st.title("Electric Vehicle Charging Stations Map (Open Charge Map)")
 
+# Allow user to enter API key (with fallback to .env)
+API_KEY = st.text_input("Open Charge Map API Key", type="password")
+if not API_KEY:
+    API_KEY = os.getenv("API_KEY")
+if not API_KEY:
+    st.warning("Please provide an API key for Open Charge Map.")
+    st.stop()
+
 col1, col2, col3 = st.columns(3)
 with col1:
     lat = st.number_input("Latitude", value=39.766)
@@ -20,8 +28,6 @@ with col2:
     lon = st.number_input("Longitude", value=30.525)
 with col3:
     dist = st.slider("Search Radius (km)", 1, 50, 5)
-
-API_KEY = os.getenv("API_KEY")
 
 url = (
     f"https://api.openchargemap.io/v3/poi/?output=json"
