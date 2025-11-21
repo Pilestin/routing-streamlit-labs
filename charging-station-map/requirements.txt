@@ -1,0 +1,7 @@
+# Requirements for the charging station Streamlit app
+streamlit
+requests
+pandas
+streamlit-folium
+folium
+python-dotenv
